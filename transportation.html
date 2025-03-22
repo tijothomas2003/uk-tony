@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transportation - Tony's Delight UK</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <div class="logo-container">
+        <div class="logo">
+          <img src="images/logo.png" alt="Tony's Delight UK Logo" />
+        </div>
+        <h1>Tony's Delight UK</h1>
+      </div>
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      <ul id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="transportation.html">Transportation</a></li>
+      </ul>
+    </nav>
+
+    <!-- Cover Video Section -->
+    <section class="cover-video">
+      <video autoplay muted loop id="coverVideo">
+        <source src="videos/transport.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div class="overlay">
+        <h1 class="transport-heading">Our Transportation Services</h1>
+        <p class="transport-subtext">Ensuring the best delivery experience for your goods.</p>
+        
+      </div>
+    </section>
+
+    <!-- Transportation Details Section -->
+
+      <!-- Partner Logistics (Image Left, Text Right) -->
+      <div class="transport-item">
+        <img src="images/logistics.jpg" alt="Partner Logistics" />
+        <div class="text-content">
+          <h2>Shipping & Logistics</h2>
+          <p>
+            We offer free shipping within Europe if the MOQ requirement is met. Otherwise, we’re happy to discuss alternatives. Our trusted logistics partners in the Netherlands ensure timely delivery at the right temperature across Europe. We’ll evaluate and choose the best transportation method for you<strong>Free of Charge!</strong>
+          </p>
+        </div>
+      </div>
+
+      <!-- Pick Up (Image Left, Text Right) -->
+      <div class="transport-item reverse">
+        <img src="images/pickup.jpg" alt="Pick Up" />
+        <div class="text-content">
+          <h2>Pick Up</h2>
+          <p>
+            You also have the possibility to come pick up your order at our
+            warehouse. This also means that there can be a possibility of
+            <strong>better pricing.</strong> To come pick up your order please
+            let us know in advance.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      function toggleMenu() {
+        document.getElementById('nav-links').classList.toggle('show')
+      }
+
+      // Scroll Animation
+      ScrollReveal().reveal('.transport-item', {
+        origin: 'bottom',
+        distance: '50px',
+        duration: 1000,
+        easing: 'ease-in-out',
+        delay: 200,
+        interval: 200,
+      })
+    </script>
+  </body>
+</html>

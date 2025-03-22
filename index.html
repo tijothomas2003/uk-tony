@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tony's Delight UK</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <script src="src/components/navbar.js" defer></script>
+    </header>
+
+    <!-- Navbar -->
+    <nav>
+      <div class="logo-container">
+        <div class="logo">
+          <img src="images/logo.png" alt="Tony's Delight UK Logo" />
+        </div>
+        <h1>Tony's Delight UK</h1>
+      </div>
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      <ul id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="transportation.html">Transportation</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1>Tony's Delight UK</h1>
+      <p>Bringing the finest Asian flavors to the European market.</p>
+      <a href="assortment.html" class="btn">Explore Our Assortment</a>
+    </section>
+
+    <!-- Leaf Image (Between Hero & Assortment) -->
+    <img src="images/leaf.png" alt="Leaf" class="leaf-img" />
+
+    <!-- Assortment Section -->
+    <section class="assortment">
+      <div class="container">
+        <h2>Our Assortment</h2>
+        <div class="card-container">
+          <div class="card">
+            <img src="images/thailand.jpg" alt="Thailand" />
+            <div class="card-content"><h3>Thailand</h3></div>
+          </div>
+          <div class="card">
+            <img src="images/dry.jpg" alt="Tony's Dry" />
+            <div class="card-content"><h3>Tony's Dry</h3></div>
+          </div>
+          <div class="card">
+            <img src="images/frozen.jpg" alt="Tony's Frozen" />
+            <div class="card-content"><h3>Tony's Frozen</h3></div>
+          </div>
+          <div class="card">
+            <img src="images/seafood.jpg" alt="Tony's Seafood" />
+            <div class="card-content"><h3>Tony's Seafood</h3></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Journey Section -->
+    <section id="about" class="our-journey">
+      <div class="container">
+        <div class="journey-content">
+          <img src="/images/burger.png" alt="Burger" class="journey-image" />
+          <div class="journey-text">
+            <h2>About us</h2>
+            <p>
+              Tony’s Delight EU brings Asia’s finest products to Europe,
+              sourcing from India, China, Thailand, and beyond. With 20+ years
+              of expertise, we ensure quality, reliability, and seamless trade,
+              bridging cultures and markets with excellence.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Branches Section -->
+    <section id="branches" class="our-branches">
+      <div class="container">
+        <h2 class="branches-title">Our Branches</h2>
+        <div class="branches-grid">
+          <div class="branch">
+            <img src="images/switzerland.png" alt="Switzerland Flag" />
+            <h3>SWITZERLAND</h3>
+            <p><strong>Tony Trading GmbH</strong></p>
+            <p>Lehenmattstrasse 352, 4052 Basel, Switzerland</p>
+            <p><strong>Email:</strong> swiss@tonysdelighteu.com</p>
+            <p><strong>Phone:</strong> 0041 763363036</p>
+          </div>
+
+          <div class="branch">
+            <img src="images/germany.png" alt="Germany Flag" />
+            <h3>GERMANY</h3>
+            <p><strong>Tony's Food GmbH</strong></p>
+            <p>Im Wörth 23, 79576 Weil am Rhein</p>
+            <p><strong>Email:</strong> germany@tonysdelighteu.com</p>
+            <p><strong>Phone:</strong> 0041 763363036 or 0031 634333132</p>
+          </div>
+
+          <div class="branch">
+            <img src="images/uk.png" alt="UK Flag" />
+            <h3>ENGLAND</h3>
+            <p><strong>P.I. FOODS Ltd</strong></p>
+            <p>64, Argyl Road, Edmonton, London, Enfield, N18 2PW</p>
+            <p><strong>Email:</strong> uk@tonysdelighteu.com</p>
+            <p><strong>Phone:</strong> 0044 79550271145 or 0031 634333132</p>
+          </div>
+
+          <div class="branch">
+            <img src="images/netherlands.png" alt="Netherlands Flag" />
+            <h3>NETHERLANDS</h3>
+            <p><strong>Tony's Delight Europe B.V.</strong></p>
+            <p>Katwijkerbroek 32, 2223 XP, Katwijk (ZH), Netherlands</p>
+            <p><strong>Email:</strong> info@tonysdelighteu.com</p>
+            <p><strong>Phone:</strong> +31702230042</p>
+            <p><strong>WhatsApp:</strong> +31 634333132</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <script src="src/components/footer.js" defer></script>
+    </footer>
+
+    <!-- Mobile Navigation Script -->
+    <script>
+      function toggleMenu() {
+        document.getElementById('nav-links').classList.toggle('show')
+      }
+    </script>
+  </body>
+</html>
