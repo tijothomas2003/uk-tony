@@ -12,7 +12,11 @@
     <nav>
       <div class="logo-container">
         <div class="logo">
-          <img src="images/logo.png" alt="Tony's Delight UK Logo" />
+          <img
+            src="images/logo.png"
+            alt="Tony's Delight UK Logo"
+            loading="lazy"
+          />
         </div>
         <h1>Tony's Delight UK</h1>
       </div>
@@ -20,7 +24,7 @@
       <ul id="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="menu.html">Menu</a></li>
+        <li><a href="products.html">Products</a></li>
         <li><a href="contact.html">Contact</a></li>
         <li><a href="transportation.html">Transportation</a></li>
       </ul>
@@ -34,39 +38,54 @@
       </video>
       <div class="overlay">
         <h1 class="transport-heading">Our Transportation Services</h1>
-        <p class="transport-subtext">Ensuring the best delivery experience for your goods.</p>
-        
+        <p class="transport-subtext">
+          Ensuring the best delivery experience for your goods.
+        </p>
       </div>
     </section>
 
     <!-- Transportation Details Section -->
-
-      <!-- Partner Logistics (Image Left, Text Right) -->
+    <section class="transport-container">
+      <!-- Partner Logistics -->
       <div class="transport-item">
-        <img src="images/logistics.jpg" alt="Partner Logistics" />
+        <img
+          src="images/logistics.jpg"
+          alt="Partner Logistics"
+          loading="lazy"
+        />
         <div class="text-content">
           <h2>Shipping & Logistics</h2>
           <p>
-            We offer free shipping within Europe if the MOQ requirement is met. Otherwise, we’re happy to discuss alternatives. Our trusted logistics partners in the Netherlands ensure timely delivery at the right temperature across Europe. We’ll evaluate and choose the best transportation method for you<strong>Free of Charge!</strong>
+            We offer free shipping within Europe if the MOQ requirement is met.
+            Otherwise, we’re happy to discuss alternatives. Our trusted
+            logistics partners in the Netherlands ensure timely delivery at the
+            right temperature across Europe. We’ll evaluate and choose the best
+            transportation method for you <strong>Free of Charge!</strong>
           </p>
         </div>
       </div>
 
-      <!-- Pick Up (Image Left, Text Right) -->
+      <!-- Pick Up -->
       <div class="transport-item reverse">
-        <img src="images/pickup.jpg" alt="Pick Up" />
+        <img src="images/pickup.jpg" alt="Pick Up" loading="lazy" />
         <div class="text-content">
           <h2>Pick Up</h2>
           <p>
             You also have the possibility to come pick up your order at our
             warehouse. This also means that there can be a possibility of
-            <strong>better pricing.</strong> To come pick up your order please
-            let us know in advance.
+            <strong>better pricing.</strong>
+            To come pick up your order please let us know in advance.
           </p>
         </div>
       </div>
     </section>
 
+    <!-- Footer -->
+    <footer>
+      <script src="src/components/footer.js" defer></script>
+    </footer>
+
+    <!-- JavaScript -->
     <script>
       function toggleMenu() {
         document.getElementById('nav-links').classList.toggle('show')

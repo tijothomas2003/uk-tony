@@ -767,7 +767,7 @@ nav ul li a.active {
 .cover-video {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 100vh; /* Full viewport height */
   overflow: hidden;
 }
 
@@ -778,7 +778,7 @@ nav ul li a.active {
   transform: translate(-50%, -50%);
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover; /* Ensures the video covers the section without distortion */
 }
 
 .overlay {
@@ -1044,4 +1044,74 @@ body {
   .branches-grid {
     grid-template-columns: repeat(1, 1fr); /* Stack on small screens */
   }
+}
+/* menu.html codes*/
+/* General Styling */
+body {
+  background-color: #0b1517;
+  color: white;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* Cover Video */
+
+/* Menu Styling */
+.menu-container {
+  padding: 50px 20px;
+}
+
+.menu-title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+/* Grid Layout */
+.menu-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* Menu Card */
+.menu-card {
+  font-family: 'Dancing Script', cursive;
+  background: #000000;
+  border-radius: 15px;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.menu-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.2);
+}
+
+.menu-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-size: 1.8rem;
+  margin: 10px 0;
+}
+
+.product-desc {
+  font-size: 1rem;
+  color: #d4d4d4;
+  font-family: 'Poppins', sans-serif;
+}
+
+.product-details {
+  font-size: 0.9rem;
+  margin: 10px 0;
+  font-family: 'Poppins', sans-serif;
 }

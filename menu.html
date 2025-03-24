@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu - Tony's Delight UK</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="menu-page">
+
+    <!-- Navbar -->
+    <nav>
+      <div class="logo-container">
+        <div class="logo">
+          <img src="images/logo.png" alt="Tony's Delight UK Logo" />
+        </div>
+        <h1>Tony's Delight UK</h1>
+      </div>
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      <ul id="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/menu">Products</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="/transportation">Transportation</a></li>
+      </ul>
+    </nav>
+
+    <!-- Cover Video Section -->
+    <section class="cover-video">
+      <video autoplay muted loop id="coverVideo">
+        <source src="videos/menu.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div class="overlay">
+        <h1 class="transport-heading">Our Products</h1>
+        <p class="transport-subtext">
+          "Premium selections, authentic flavors—fresh, frozen, and exotic
+          delights in every bite"
+        </p>
+      </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu-container">
+      <h2 class="menu-title">Our Seafood products</h2>
+
+      <div class="menu-grid">
+        <!-- Card 1 -->
+        <div class="menu-card">
+          <img src="images/shrimp1.jpg" alt="Product Image" />
+          <h3>Vannamei Shrimp pd</h3>
+          <p class="product-desc">
+            A premium-quality white shrimp, carefully peeled and deveined for
+            convenience. Perfect for grilling, stir-frying, or adding to seafood
+            dishes, offering a sweet, mild flavor with a firm texture.
+          </p>
+          <p class="product-details">1000gm | 31/40</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="menu-card">
+          <img src="images/shrimp2.jpg" alt="Product Image" />
+          <h3>Vannamei Shrimp HLSO</h3>
+          <p class="product-desc">
+            Premium-quality, sustainably sourced shrimp known for their sweet, mild flavor and firm texture. Ideal for grilling, frying, or adding to seafood dishes. Packed fresh for superior taste and quality.
+          </p>
+          <p class="product-details">1000gm | 16/20</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="menu-card">
+          <img src="images/crab1.jpg" alt="Product Image" />
+          <h3>Blue Swimming Crab</h3>
+          <p class="product-desc">
+            A delicate and flavorful crab with sweet, tender meat. Perfect for crab cakes, soups, salads, and seafood dishes. Wild-caught and processed for premium freshness and quality.
+          </p>
+          <p class="product-details">Half Cut Crab U10</p>
+        </div>
+
+
+    <script src="src/main.js"></script>
+  </body>
+</html>
