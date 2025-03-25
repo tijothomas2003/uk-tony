@@ -5,14 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tony's Delight UK</title>
     <link rel="stylesheet" href="src/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
+    <header>
+      <script src="src/components/navbar.js" defer></script>
+    </header>
+
     <!-- Navbar -->
     <nav>
       <div class="logo-container">
@@ -24,10 +26,10 @@
       <div class="menu-toggle" onclick="toggleMenu()">☰</div>
       <ul id="nav-links">
         <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/menu">Products</a></li>
-        <li><a href="/contact">Contact</a></li>
-        <li><a href="/transportation">Transportation</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/menu.html">Products</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="/transportation.html">Transportation</a></li>
       </ul>
     </nav>
 
@@ -128,6 +130,255 @@
         </div>
       </div>
     </section>
+    <!-- Cover Video Section -->
+    <section class="cover-video">
+      <video autoplay muted loop id="coverVideo">
+        <source src="videos/menu.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div class="overlay">
+        <h1 class="transport-heading">Our Products</h1>
+        <p class="transport-subtext">
+          "Premium selections, authentic flavors—fresh, frozen, and exotic
+          delights in every bite"
+        </p>
+      </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu-container">
+      <h2 class="menu-title">Our Seafood products</h2>
+
+      <div class="menu-grid">
+        <!-- Card 1 -->
+        <div class="menu-card">
+          <img src="images/shrimp1.jpg" alt="Product Image" />
+          <h3>Vannamei Shrimp pd</h3>
+          <p class="product-desc">
+            A premium-quality white shrimp, carefully peeled and deveined for
+            convenience. Perfect for grilling, stir-frying, or adding to seafood
+            dishes, offering a sweet, mild flavor with a firm texture.
+          </p>
+          <p class="product-details">1000gm | 31/40</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="menu-card">
+          <img src="images/shrimp2.jpg" alt="Product Image" />
+          <h3>Vannamei Shrimp HLSO</h3>
+          <p class="product-desc">
+            Premium-quality, sustainably sourced shrimp known for their sweet, mild flavor and firm texture. Ideal for grilling, frying, or adding to seafood dishes. Packed fresh for superior taste and quality.
+          </p>
+          <p class="product-details">1000gm | 16/20</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="menu-card">
+          <img src="images/crab1.jpg" alt="Product Image" />
+          <h3>Blue Swimming Crab</h3>
+          <p class="product-desc">
+            A delicate and flavorful crab with sweet, tender meat. Perfect for crab cakes, soups, salads, and seafood dishes. Wild-caught and processed for premium freshness and quality.
+          </p>
+          <p class="product-details">Half Cut Crab U10</p>
+        </div>
+
+
+         <!-- Contact Hero Section with Background Video -->
+    <div class="contact-hero">
+      <video class="bg-video" autoplay loop muted playsinline>
+        <source src="videos/contact-bg.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <h1 class="contact-heading">Contact Us</h1>
+    </div>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form">
+      <div class="container">
+        <h2>Get in touch</h2>
+        <p>
+          Have questions or inquiries? Reach out to us using the form below.
+        </p>
+        <form action="https://formspree.io/f/xldjjyab" method="POST">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Contact Info Section -->
+    <section class="contact-info">
+      <div class="container">
+        <!-- Address -->
+        <a
+          href="https://www.google.com/maps/place/Tony's+Delight+UK+Ltd+Unit+4,+Britannia+Business+Park,+Stourport+Rd,+Kidderminster+DY11+7PZ,+United+Kingdom"
+          target="_blank"
+          class="info-item"
+        >
+          <h3>📍 Address</h3>
+          <p>
+            Tony's Delight UK Ltd. Unit 4, Britannia Business Park, Stourport
+            Rd, Kidderminster DY11 7PZ, United Kingdom
+          </p>
+        </a>
+
+        <!-- Phone -->
+        <a href="https://wa.me/447442712265" target="_blank" class="info-item">
+          <h3>📱 WhatsApp</h3>
+          <p>+44 7442712265</p>
+        </a>
+
+        <!-- Email -->
+        <a href="mailto:tony@tonysdelight.co.uk" class="info-item">
+          <h3>📧 Email</h3>
+          <p>tony@tonysdelight.co.uk</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- Map Section -->
+    <section id="map" style="width: 100%; height: 400px">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2435.182841680692!2d-2.2588495234742756!3d52.385235672026184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48708c610860d8f3%3A0xb99654f4413f2b0c!2sTony&#39;s%20Bakery!5e0!3m2!1sen!2suk!4v1742571905857!5m2!1sen!2suk"
+        width="2000"
+        height="300"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      >
+        width="100%" height="400" style="border: 0" allowfullscreen=""
+        loading="lazy" >
+      </iframe>
+    </section>
+    <!-- Mobile Navigation Script -->
+    <script>
+      function toggleMenu() {
+        document.getElementById('nav-links').classList.toggle('show')
+      }
+    </script>
+    <script>
+      function initMap() {
+        const location = { lat: 52.3852, lng: -2.2588 } // Tony's Delight UK location
+        const map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 14,
+          center: location,
+          styles: [
+            { elementType: 'geometry', stylers: [{ color: '#010101FF' }] },
+            {
+              elementType: 'labels.text.stroke',
+              stylers: [{ color: '#070707FF' }],
+            },
+            {
+              elementType: 'labels.text.fill',
+              stylers: [{ color: '#757575' }],
+            },
+            {
+              featureType: 'water',
+              elementType: 'geometry',
+              stylers: [{ color: '#000000' }],
+            },
+            {
+              featureType: 'road',
+              elementType: 'geometry',
+              stylers: [{ color: '#383838' }],
+            },
+          ],
+        })
+
+        new google.maps.Marker({
+          position: location,
+          map: map,
+          title: "Tony's Delight UK Ltd.",
+        })
+      }
+    </script>
+
+    <!-- Google Maps API (Replace YOUR_API_KEY with your actual API key) -->
+    <script
+      async
+      defer
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2435.182841680692!2d-2.2588495234742756!3d52.385235672026184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48708c610860d8f3%3A0xb99654f4413f2b0c!2sTony&#39;s%20Bakery!5e0!3m2!1sen!2suk!4v1742571905857!5m2!1sen!2suk"
+    ></script>
+
+
+      <!-- Cover Video Section -->
+      <section class="cover-video">
+        <video autoplay muted loop id="coverVideo">
+          <source src="videos/transport.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div class="overlay">
+          <h1 class="transport-heading">Our Transportation Services</h1>
+          <p class="transport-subtext">
+            Ensuring the best delivery experience for your goods.
+          </p>
+        </div>
+      </section>
+  
+      <!-- Transportation Details Section -->
+      <section class="transport-container">
+        <!-- Partner Logistics -->
+        <div class="transport-item">
+          <img
+            src="images/logistics.jpg"
+            alt="Partner Logistics"
+            loading="lazy"
+          />
+          <div class="text-content">
+            <h2>Shipping & Logistics</h2>
+            <p>
+              We offer free shipping within Europe if the MOQ requirement is met.
+              Otherwise, we’re happy to discuss alternatives. Our trusted
+              logistics partners in the Netherlands ensure timely delivery at the
+              right temperature across Europe. We’ll evaluate and choose the best
+              transportation method for you <strong>Free of Charge!</strong>
+            </p>
+          </div>
+        </div>
+  
+        <!-- Pick Up -->
+        <div class="transport-item reverse">
+          <img src="images/pickup.jpg" alt="Pick Up" loading="lazy" />
+          <div class="text-content">
+            <h2>Pick Up</h2>
+            <p>
+              You also have the possibility to come pick up your order at our
+              warehouse. This also means that there can be a possibility of
+              <strong>better pricing.</strong>
+              To come pick up your order please let us know in advance.
+            </p>
+          </div>
+        </div>
+      </section>
+  
+      <!-- Footer -->
+      <footer>
+        <script src="src/components/footer.js" defer></script>
+      </footer>
+  
+      <!-- JavaScript -->
+      <script>
+        function toggleMenu() {
+          document.getElementById('nav-links').classList.toggle('show')
+        }
+  
+        // Scroll Animation
+        ScrollReveal().reveal('.transport-item', {
+          origin: 'bottom',
+          distance: '50px',
+          duration: 1000,
+          easing: 'ease-in-out',
+          delay: 200,
+          interval: 200,
+        })
+      </script>
 
     <!-- Footer -->
 

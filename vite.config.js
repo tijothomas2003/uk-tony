@@ -6,9 +6,10 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
+        contact: resolve(__dirname, 'contact.html'),
+        menu: resolve(__dirname, 'menu.html'),
+        transportation: resolve(__dirname, 'transportation.html'),
       },
     },
-    // Copy _redirects to dist
-    assetsInclude: ['_redirects'],
   },
 })

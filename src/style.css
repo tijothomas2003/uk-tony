@@ -178,7 +178,6 @@ nav h1 {
 }
 
 nav ul {
-  list-style: none;
   display: flex;
   gap: 60px;
   margin-left: auto;
@@ -197,21 +196,32 @@ nav ul li a:hover {
 }
 
 .menu-toggle {
-  display: none;
-  font-size: 40px;
+  font-size: 24px;
   cursor: pointer;
-  color: #fcc777;
+  color: #e7c698;
 }
 
 /* Responsive styles */
 @media (max-width: 768px) {
-  nav {
-    flex-direction: column;
-    align-items: center;
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+    font-size: 28px;
+    z-index: 1100;
   }
 
   nav ul {
-    display: none;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    top: 60px;
+    left: 0;
+    padding: 20px;
+    text-align: center;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+
     flex-direction: column;
     width: 100%;
     text-align: center;
